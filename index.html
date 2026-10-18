@@ -1,0 +1,174 @@
+<!--# Задание1-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    <h2>Имя пользователя: {{ user_name }}</h2>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание2-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--   <h2>Профиль пользователя</h2>-->
+<!--<ul>-->
+<!--    <li>Имя: {{ name }}</li>-->
+<!--    <li>Возраст: {{ age }}</li>-->
+<!--    <li>Телефон: {{ phone }}</li>-->
+<!--    <li>E-Mail: {{ email }}</li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 3-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--  <h2>Профиль пользователя</h2>-->
+<!--<ul>-->
+<!--    <li>Имя: {{ profile_data.name }}</li>-->
+<!--    <li>Возраст: {{ profile_data.age }}</li>-->
+<!--    <li>Телефон: {{ profile_data.phone }}</li>-->
+<!--    <li>E-Mail: {{ profile_data.email }}</li>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 4-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!-- <h2>Профиль пользователя</h2>-->
+<!--<ul>-->
+<!--{% for item in profile_data %}-->
+<!--    <li>{{ item }}</li>-->
+<!--{% endfor %}-->
+
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 5-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Сегодня {% now "d.m.y, \в\р\е\м\я H:i" %}</h2>-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 6-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--   {% for employee in employees %}-->
+<!--    <h2>-->
+<!--        Сотрудник {{ employee.name }} работает-->
+<!--        {% if employee.experience >= 5 %}-->
+<!--            пять или больше лет.-->
+<!--        {% else %}-->
+<!--            меньше пяти лет.-->
+<!--        {% endif %}-->
+<!--    </h2>-->
+<!--{% endfor %}-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 7-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Список сотрудников</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    <h2>Список сотрудников</h2>-->
+<!--    <ol>-->
+<!--        {% for user in user_list %}-->
+<!--            <li>{{ user }}</li>-->
+<!--        {% endfor %}-->
+<!--    </ol>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 8-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Список сотрудников</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--    <h2>Новые сотрудники</h2>-->
+<!--<ol>-->
+<!--    {% for user in user_list %}-->
+<!--        {% if user.experience <= 2 %}-->
+<!--            <li>{{ user.name }}</li>-->
+<!--        {% endif %}-->
+<!--    {% endfor %}-->
+<!--</ol>-->
+
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 9-->
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="utf-8" />-->
+<!--    <title>Сотрудники</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    {% include 'employees_list.html' %}-->
+<!--</body>-->
+<!--</html>-->
+
+<!--#Задание 10-->
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="ru">-->
+<!--<head>-->
+<!--    <meta charset="utf-8" />-->
+<!--    <title>Сотрудники</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--    {% if tmpl_name %}-->
+<!--        {% include tmpl_name %}-->
+<!--    {% else %}-->
+<!--        {% include 'default_employees.html' %}-->
+<!--    {% endif %}-->
+<!--</body>-->
+<!--</html>-->
