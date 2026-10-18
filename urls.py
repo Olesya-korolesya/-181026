@@ -1,10 +1,11 @@
 from django.contrib import admin
 from django.urls import path
-from . import views
 
+from blog import views
+
+#Задание1
 urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', views.user_index, name='user_index'),
 ]
-
